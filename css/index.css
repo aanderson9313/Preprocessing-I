@@ -153,7 +153,7 @@ body {
   flex-wrap: nowrap;
   padding: 5% 6%;
 }
-.container #navbar a:hover {
+.container #navbar a :hover {
   color: #20f0f0;
 }
 .container .pic {
@@ -165,4 +165,7 @@ body {
   margin-bottom: 80px;
   margin-left: 220px;
   display: display: flex;
+  padding: 50px;
+  background-color: #20f0f0;
+  border: 5px dashed white;
 }

@@ -81,23 +81,21 @@ html, body {
 	#navbar {
 		border: 2px dotted rgb(32, 240, 240);
 		padding: 2% 25%;
-		a {
-			text-decoration: @text-decoration;
-			color: @color;
-			display: @flex;
-			flex-direction: row;
-			flex-wrap: nowrap;
-			padding: 5% 6%;
-			
 
+			a {
+				text-decoration: @text-decoration;
+				color: @color;
+				display: @flex;
+				flex-direction: row;
+				flex-wrap: nowrap;
+				padding: 5% 6%;
 			
-		}
-
-		a:hover {
-			color: rgb(32, 240, 240);
+				:hover {
+					color: #20f0f0;	
+						}
 			
-		}
-		
+			}
+	
 	
 	}
 
@@ -110,7 +108,9 @@ html, body {
 		margin-bottom: 80px;
 		margin-left: 220px;
 		display: @flex;
-		
+		padding: 50px;
+		background-color: #20f0f0;
+		border: 5px dashed @color;
 	}
 }
 
