@@ -57,3 +57,79 @@ html, body {
     height: 100%;
 }
 
+// variables
+
+@color: white;
+@font: font-family: 'Permanent Marker', cursive;
+@background-color: rgb(77, 76, 76);
+@width: 880px;
+@height: auto;
+@margin: 0 auto;
+@flex: display: flex;
+
+
+.container {
+	background-color: @background-color;
+	color: @color;
+	width: @width;
+	margin: @margin;
+	height: @height;
+	font-family: @font;
+	
+
+
+	#navbar {
+		border: 2px dotted rgb(32, 240, 240);
+		width: 100%;
+
+			a {
+				text-decoration: none;
+				color: @color;
+				display: @flex;
+				flex-direction: row;
+				flex-wrap: nowrap;
+
+			
+				:hover {
+					color: #20f0f0;	
+						}
+			
+			}
+	
+		}
+
+	.intro {
+		font-size: 16px;
+		.pic {
+			width: 50%;
+			height: 50%;
+			transform: rotate(90deg);
+			position: relative;
+			margin-top: 80px;
+			margin-bottom: 80px;
+			margin-left: 220px;
+			display: @flex;
+			padding: 50px;
+			background-color: #20f0f0;
+			border: 5px dashed @color;
+			}
+			
+		.lex {
+			text-align: center;
+			}
+
+		.p1 {
+			.lex();
+
+			}
+
+
+		}
+	}
+}
+	
+
+
+
+
+
