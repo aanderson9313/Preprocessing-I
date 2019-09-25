@@ -134,3 +134,35 @@ html,
 body {
   height: 100%;
 }
+.container {
+  background-color: #4d4c4c;
+  color: white;
+  width: 880px;
+  margin: 0 auto;
+  height: auto;
+}
+.container #navbar {
+  border: 2px dotted #20f0f0;
+  padding: 2% 25%;
+}
+.container #navbar a {
+  text-decoration: none;
+  color: white;
+  display: display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  padding: 5% 6%;
+}
+.container #navbar a:hover {
+  color: #20f0f0;
+}
+.container .pic {
+  width: 50%;
+  height: 50%;
+  transform: rotate(90deg);
+  position: relative;
+  margin-top: 80px;
+  margin-bottom: 80px;
+  margin-left: 220px;
+  display: display: flex;
+}
