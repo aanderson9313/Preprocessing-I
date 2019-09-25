@@ -60,9 +60,8 @@ html, body {
 // variables
 
 @color: white;
-@font-family: Arial, Helvetica;
+@font: font-family: 'Permanent Marker', cursive;
 @background-color: rgb(77, 76, 76);
-@text-decoration: none;
 @width: 880px;
 @height: auto;
 @margin: 0 auto;
@@ -75,20 +74,21 @@ html, body {
 	width: @width;
 	margin: @margin;
 	height: @height;
+	font-family: @font;
 	
 
 
 	#navbar {
 		border: 2px dotted rgb(32, 240, 240);
-		padding: 2% 25%;
+		width: 100%;
 
 			a {
-				text-decoration: @text-decoration;
+				text-decoration: none;
 				color: @color;
 				display: @flex;
 				flex-direction: row;
 				flex-wrap: nowrap;
-				padding: 5% 6%;
+
 			
 				:hover {
 					color: #20f0f0;	
@@ -96,23 +96,40 @@ html, body {
 			
 			}
 	
-	
-	}
+		}
 
-	.pic {
-		width: 50%;
-		height: 50%;
-		transform: rotate(90deg);
-		position: relative;
-		margin-top: 80px;
-		margin-bottom: 80px;
-		margin-left: 220px;
-		display: @flex;
-		padding: 50px;
-		background-color: #20f0f0;
-		border: 5px dashed @color;
+	.intro {
+		font-size: 16px;
+		.pic {
+			width: 50%;
+			height: 50%;
+			transform: rotate(90deg);
+			position: relative;
+			margin-top: 80px;
+			margin-bottom: 80px;
+			margin-left: 220px;
+			display: @flex;
+			padding: 50px;
+			background-color: #20f0f0;
+			border: 5px dashed @color;
+			}
+			
+		.lex {
+			text-align: center;
+			}
+
+		.p1 {
+			.lex();
+
+			}
+
+
+		}
 	}
 }
+	
+
+
 
 
 
