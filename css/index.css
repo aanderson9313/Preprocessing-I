@@ -139,7 +139,7 @@ body {
   margin: 0 auto;
   background-color: #525050;
   color: white;
-  font-family: 'Permanent Marker', cursive;
+  font-family: 'Merienda', cursive;
 }
 .container #navbar {
   display: flex;
@@ -201,4 +201,16 @@ body {
 .container #intro a:hover {
   background-color: white;
   color: #525050;
+}
+.container #about {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  width: 100%;
+}
+.container #about .about {
+  width: 50%;
+}
+.container #about .history {
+  width: 50%;
 }

@@ -69,7 +69,7 @@ html, body {
 
 // mixins
 .ffamily() {
-	font-family: 'Permanent Marker', cursive;
+	font-family: 'Merienda', cursive;
 }
 
 .custom-layout(@justify, @align) {
@@ -147,6 +147,21 @@ html, body {
 						color: #525050;
 					}
 			}
+		}
+
+		#about {
+			display: flex;
+			flex-direction: row;
+			flex-wrap: nowrap;
+			width: @width;
+
+				.about {
+					width: 50%;
+				}
+
+				.history {
+					width: 50%;
+				}
 		}
 }
 
