@@ -71,6 +71,7 @@ html, body {
 .ffamily() {
 	font-family: 'Permanent Marker', cursive;
 }
+
 .custom-layout(@justify, @align) {
 	display: flex;
 	justify-content: @justify;
@@ -84,9 +85,14 @@ html, body {
 	margin: 0 auto;
 	background-color: @bgcolor;
 	.ffamily();
+
 		#navbar {
 			.custom-layout(space-around, center);
 			flex-wrap: nowrap;
+			margin: 20px 20px;
+			padding: 20px 20px;
+			border: 2px dotted @color2;
+			width: @width;
 			
 			a {
 				text-decoration: none;
@@ -99,7 +105,19 @@ html, body {
 			}
 		}
 
-		
+		#intro {
+			width: 50%;
+			.pic {
+				width: 80%;
+				.custom-layout(center, center);
+				transform: rotate(90deg);
+				padding: 20px 20px;
+				margin: 20% 60% 20% 60%;
+				background-color: @color2;
+				border: 5px solid @color;
+
+			}
+		}
 }
 
 
