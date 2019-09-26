@@ -134,45 +134,23 @@ html,
 body {
   height: 100%;
 }
-@font: font-family: 'Permanent Marker', cursive;
 .container {
-  background-color: #4d4c4c;
-  color: white;
   width: 880px;
   margin: 0 auto;
-  height: auto;
-  font-family: @font;
+  background-color: #525050;
+  font-family: 'Permanent Marker', cursive;
 }
 .container #navbar {
-  border: 2px dotted #20f0f0;
-  padding: 2% 25%;
+  display: flex;
+  justify-content: space-around;
+  align-content: center;
+  flex-wrap: nowrap;
 }
 .container #navbar a {
   text-decoration: none;
   color: white;
-  display: display: flex;
-  flex-direction: row;
-  flex-wrap: nowrap;
-  padding: 5% 6%;
 }
-.container #navbar a :hover {
-  color: #20f0f0;
+.container #navbar a:hover {
+  color: #41f6f6;
+  font-size: 1.5em;
 }
-.container .intro .pic {
-  width: 50%;
-  height: 50%;
-  transform: rotate(90deg);
-  position: relative;
-  margin-top: 80px;
-  margin-bottom: 80px;
-  margin-left: 220px;
-  display: display: flex;
-  padding: 50px;
-  background-color: #20f0f0;
-  border: 5px dashed white;
-}
-.container .intro .lex {
-  text-align: center;
-  font-weight: 400;
-}
-

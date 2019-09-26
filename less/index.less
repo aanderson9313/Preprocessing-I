@@ -57,76 +57,53 @@ html, body {
     height: 100%;
 }
 
+// my code starts here!
+
 // variables
-
+@bgcolor: #525050;
 @color: white;
-@font: font-family: 'Permanent Marker', cursive;
-@background-color: rgb(77, 76, 76);
-@width: 880px;
-@height: auto;
+@color2: #41f6f6;
 @margin: 0 auto;
-@flex: display: flex;
+@width: 100%;
+@font-size: 16px;
+
+// mixins
+.ffamily() {
+	font-family: 'Permanent Marker', cursive;
+}
+.custom-layout(@justify, @align) {
+	display: flex;
+	justify-content: @justify;
+	align-content: center;
+}
 
 
+// usage
 .container {
-	background-color: @background-color;
-	color: @color;
-	width: @width;
-	margin: @margin;
-	height: @height;
-	font-family: @font;
-	
-
-
-	#navbar {
-		border: 2px dotted rgb(32, 240, 240);
-		width: 100%;
-
+	width: 880px;
+	margin: 0 auto;
+	background-color: @bgcolor;
+	.ffamily();
+		#navbar {
+			.custom-layout(space-around, center);
+			flex-wrap: nowrap;
+			
 			a {
 				text-decoration: none;
 				color: @color;
-				display: @flex;
-				flex-direction: row;
-				flex-wrap: nowrap;
 
-			
-				:hover {
-					color: #20f0f0;	
-						}
-			
+					&:hover {
+						color: @color2;
+						font-size: 1.5em;
+					}
 			}
-	
 		}
 
-	.intro {
-		font-size: 16px;
-		.pic {
-			width: 50%;
-			height: 50%;
-			transform: rotate(90deg);
-			position: relative;
-			margin-top: 80px;
-			margin-bottom: 80px;
-			margin-left: 220px;
-			display: @flex;
-			padding: 50px;
-			background-color: #20f0f0;
-			border: 5px dashed @color;
-			}
-			
-		.lex {
-			text-align: center;
-			}
-
-		.p1 {
-			.lex();
-
-			}
-
-
-		}
-	}
+		
 }
+
+
+
 	
 
 
