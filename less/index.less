@@ -66,6 +66,7 @@ html, body {
 @margin: 0 auto;
 @width: 100%;
 @font-size: 16px;
+@border: 3px solid @color;
 
 // mixins
 .ffamily() {
@@ -136,7 +137,7 @@ html, body {
 				padding: 20px;
 				font-size: 2em;
 				color: @color2;
-				border: 1px solid @color;
+				border: @border;
 				border-radius: 5px;
 				margin-left: 80%;
 				margin-bottom: 5%;
@@ -153,14 +154,52 @@ html, body {
 			display: flex;
 			flex-direction: row;
 			flex-wrap: nowrap;
-			width: @width;
+			width: 880px;
+			margin: @margin;
+			padding-bottom: 10px;
 
 				.about {
-					width: 50%;
+					width: 440px;
+					height: 180px;
+					text-align: justify;
+					padding-right: 10px;
+					padding-top: 10px;
+					padding-left: 10px;
+					background-color: #41f6f6;
+					color: @bgcolor;
+					border: @border;
+				
 				}
 
 				.history {
-					width: 50%;
+					width: 440px;
+					.about;
+					padding-left: 40px;
+				}
+		}
+		.skills {
+			padding: 10px;
+			text-align: center;
+				a {
+					text-decoration: none;
+					color: @color2;
+						 span{
+							&:hover {
+								font-size: 40px;
+							}
+						}
+				}
+		}
+		.contact {
+			text-align: center;
+			border: 2px dotted @color2;
+			padding: 10px;
+				.text-area {
+					border: 5px solid @color2;
+				}
+				a {
+					text-decoration: none;
+					color: @color2;
 				}
 		}
 }

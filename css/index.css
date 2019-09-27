@@ -192,7 +192,7 @@ body {
   padding: 20px;
   font-size: 2em;
   color: #41f6f6;
-  border: 1px solid white;
+  border: 3px solid white;
   border-radius: 5px;
   margin-left: 80%;
   margin-bottom: 5%;
@@ -206,11 +206,53 @@ body {
   display: flex;
   flex-direction: row;
   flex-wrap: nowrap;
-  width: 100%;
+  width: 880px;
+  margin: 0 auto;
+  padding-bottom: 10px;
 }
 .container #about .about {
-  width: 50%;
+  width: 440px;
+  height: 180px;
+  text-align: justify;
+  padding-right: 10px;
+  padding-top: 10px;
+  padding-left: 10px;
+  background-color: #41f6f6;
+  color: #525050;
+  border: 3px solid white;
 }
 .container #about .history {
-  width: 50%;
+  width: 440px;
+  height: 180px;
+  text-align: justify;
+  padding-right: 10px;
+  padding-top: 10px;
+  padding-left: 10px;
+  background-color: #41f6f6;
+  color: #525050;
+  border: 3px solid white;
+  padding-left: 40px;
+}
+.container .skills {
+  padding: 10px;
+  text-align: center;
+}
+.container .skills a {
+  text-decoration: none;
+  color: #41f6f6;
+}
+.container .skills a span:hover {
+  font-size: 40px;
+}
+.container .contact {
+  text-align: center;
+  border: 2px dotted #41f6f6;
+  padding: 10px;
+}
+.container .contact .text-area {
+  border: 5px solid #41f6f6;
+}
+.container .contact a {
+  text-decoration: none;
+  color: #41f6f6;
 }
